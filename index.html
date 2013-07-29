@@ -89,11 +89,27 @@
 
 
 
+<label for="delay">Email address</label>
+<input type="text" class="form-control" id="delay" placeholder="Enter email">
+<label for="title">Email address</label>
+<input type="text" class="form-control" id="title" placeholder="Enter email">
+<textarea id="theMessage"  class="form-control" rows="3"></textarea>
+<select class="form-control">
+    <option>notice</option>
+    <option>info</option>
+    <option>success</option>
+    <option>error</option>
+</select>
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">press to see data</button>
+
+
 <script type="text/javascript">
     $(function(){
         $.pnotify({
             title: 'Title:',
-            text: 'Message:  Type:'
+            text: 'Message:',
+            Type: 'success',
+            delay: '8000'
         });
     });
 </script>
