@@ -32,7 +32,7 @@
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.js" type="text/javascript" > </script>
-    <script type="text/javascript" src="js/jquery.pnotify.min.js"></script>
+    <script src="js/jquery.pnotify.min.js" type="text/javascript"></script>
 
 
 
@@ -111,7 +111,7 @@
 </select>
 <br>
 
-<button type="button" class="btn btn-success" onclick="" >press to see data</button>
+<button type="button" class="btn btn-success" onclick="pineNotify();" >press to see data</button>
 
 
 <script type="text/javascript">
@@ -123,13 +123,15 @@
             delay: '8000'
         });
     }
-    $(pineNotify());
 
-</script>
 
-<script>
     $.pnotify({stack: {"dir1": "up", "dir2": "right"}});
+
 </script>
+
+
+
+
 
 
 </body>
