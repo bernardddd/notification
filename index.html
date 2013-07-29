@@ -116,10 +116,13 @@
 
 <script type="text/javascript">
     delay = document.getElementById("delay").value;
+    title = document.getElementById("title").value;
+    theMessahe = document.getElementById("theMessage").value;
+    theType = document.getElementById("theType").value;
 
     function pineNotify(){
         $.pnotify({
-            title: 'Title:' + delay,
+            title: 'Title:' + title,
             text: 'Message:',
             Type: 'success',
             delay: '8000'
