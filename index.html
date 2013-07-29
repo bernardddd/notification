@@ -88,7 +88,7 @@
 <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
 
 
-<br>
+<br><br><br>
 
 <label for="delay">Delay</label>
 <input type="text"  id="delay" class="form-control" placeholder="Enter delay in seconds">
@@ -111,18 +111,20 @@
 </select>
 <br>
 
-<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">press to see data</button>
+<button type="button" class="btn btn-success" onclick="" >press to see data</button>
 
 
 <script type="text/javascript">
-    $(function(){
+    function pineNotify(){
         $.pnotify({
             title: 'Title:',
             text: 'Message:',
             Type: 'success',
             delay: '8000'
         });
-    });
+    }
+    $(pineNotify());
+
 </script>
 
 <script>
