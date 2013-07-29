@@ -115,21 +115,20 @@
 
 
 <script type="text/javascript">
+
     delay = $("#delay").val();
     title = $("#title").val();
     theMessagee = $("#theMessage").val();
     theType = $("#theType").val();
 
-
-    function pineNotify(){
+    $(document).ready(function pineNotify(){
         $.pnotify({
             title: 'Title:' + title,
             text: 'Message:' ,
             Type: 'success' + theType,
             delay: '8000' + delay
         });
-    }
-
+    });
 
     $.pnotify({stack: {"dir1": "up", "dir2": "right"}});
 
