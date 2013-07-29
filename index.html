@@ -115,9 +115,11 @@
 
 
 <script type="text/javascript">
+    delay = document.getElementById("delay").value;
+
     function pineNotify(){
         $.pnotify({
-            title: 'Title:',
+            title: 'Title:' + delay,
             text: 'Message:',
             Type: 'success',
             delay: '8000'
