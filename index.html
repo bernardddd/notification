@@ -30,7 +30,8 @@
     <link href="css/jquery.pnotify.default.icons.css" media="all" rel="stylesheet" type="text/css" />
 
 
-    <script src="js/jquery-2.0.2.js"></script>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.js" type="text/javascript" > </script>
     <script src="js/jquery.pnotify.min.js" type="text/javascript"></script>
 
@@ -121,15 +122,14 @@
     theMessagee = $("#theMessage").val();
     theType = $("#theType").val();
 
-    $(document).ready(function pineNotify(){
+    function pineNotify(){
         $.pnotify({
             title: 'Title:' + title,
             text: 'Message:' ,
             Type: 'success' + theType,
             delay: '8000' + delay
         });
-    });
-
+    }
     $.pnotify({stack: {"dir1": "up", "dir2": "right"}});
 
 </script>

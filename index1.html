@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <link type="text/css" href="css/bootstrap.css" rel="stylesheet"/>
+    <link type="text/css" href="css/jquery.pnotify.default.css" media="all" rel="stylesheet"/>
+    <link type="text/css" href="css/jquery.pnotify.default.icons.css" media="all" rel="stylesheet"/>
+
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.pnotify.min.js"></script>
+
+    <script type="text/javascript">
+        // grab html content
+
+        function pineNotify(){
+            var theDelay = $("#delay").val();
+            var theTitle = $("#title").val();
+            var theMessage = $("#message").val();
+            var theType = $("#type").val();
+            $.pnotify({
+                delay: theDelay,
+                title: 'Title:' + theTitle,
+                text: 'Message:' + theMessage,
+                type: theType
+            });
+        }
+        $.pnotify({stack: {"dir1": "up", "dir2": "right"}});
+
+    </script>
+
+</head>
+
+
+
+
+
+
+<body>
+
+<h1> hello again and again </h1>
+
+<!-- just a table from library -->
+<div class="row">
+    <div class="col-lg-4">1st column</div>
+    <div class="col-lg-4">first name</div>
+    <div class="col-lg-4">family name</div>
+</div>
+
+<!-- just a button from library -->
+<button type="button" class="btn btn-primary">Primary</button>
+
+<!-- alert message -->
+<div class="alert alert-success">
+    <strong>Well done!</strong> first message of bernard
+</div>
+
+<!-- Button trigger modal -->
+<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
+
+<!-- Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                here is sommmmmmmmmmmmmmmmmmmmmmmmmmmmme   contentttttttttttttttttttttttttttttt
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn">Close</a>
+                <a href="#" class="btn btn-primary">Save changes</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- 3 buttons to trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" >click to see modal</button>
+<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
+<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
+
+
+<br><br><br>
+
+<!-- html notification fields -->
+<!-- delays in sec of the notification-->
+<label for="delay">Delay</label>
+<input type="text" id="delay" value="" class="form-control" placeholder="Enter delay in seconds">
+<br>
+<!-- title of the notification -->
+<label for="title">Title</label>
+<input type="text" id="title" class="form-control" placeholder="Enter title">
+<br>
+<!-- message of the notification-->
+<label for="message">your message</label>
+<textarea id="message" class="form-control" rows="3" placeholder="Enter your message"></textarea>
+<br>
+<!-- type of the notification-->
+<label for="type">Type</label>
+<select id="type" class="form-control">
+    <option>notice</option>
+    <option>info</option>
+    <option>success</option>
+    <option>error</option>
+</select>
+<br>
+<!-- button to trigger the notification-->
+<button type="button" class="btn btn-success" onclick="pineNotify();">Press to see notification</button>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
